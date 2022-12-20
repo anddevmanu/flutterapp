@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'FDCalculator.dart';
 import 'NextScreen.dart';
 import 'RDCalculator.dart';
-import 'login.dart';
+import 'Login.dart';
 
 // import 'NextScreen.dart';
 // import 'FDCalculator.dart';
@@ -114,7 +114,7 @@ class _MyHomePageState extends State<MyHomePage> {
               style: Theme.of(context).textTheme.headline4,
             ),
             Container(
-              child: FlatButton(
+              child: TextButton(
                 child: Text('login button', style: TextStyle(fontSize: 20.0)),
                 onPressed: () {
                   Navigator.of(context).push(
@@ -123,7 +123,7 @@ class _MyHomePageState extends State<MyHomePage> {
               ),
             ),
             Container(
-              child: FlatButton(
+              child: TextButton(
                 child: Text('RD Calculator', style: TextStyle(fontSize: 20.0)),
                 onPressed: () {
                   Navigator.of(context).push(
@@ -132,7 +132,7 @@ class _MyHomePageState extends State<MyHomePage> {
               ),
             ),
             Container(
-              child: FlatButton(
+              child: ElevatedButton(
                 child: Text('FD Calculator', style: TextStyle(fontSize: 20.0)),
                 onPressed: () {
                   Navigator.of(context).push(
