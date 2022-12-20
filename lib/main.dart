@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'FDCalculator.dart';
 import 'NextScreen.dart';
 import 'RDCalculator.dart';
+import 'PPFCalculator.dart';
 import 'Login.dart';
 
 // import 'NextScreen.dart';
@@ -128,6 +129,15 @@ class _MyHomePageState extends State<MyHomePage> {
                 onPressed: () {
                   Navigator.of(context).push(
                       MaterialPageRoute(builder: (context) => RDCalculator()));
+                },
+              ),
+            ),
+            Container(
+              child: TextButton(
+                child: Text('PPF Calculator', style: TextStyle(fontSize: 20.0)),
+                onPressed: () {
+                  Navigator.of(context).push(
+                      MaterialPageRoute(builder: (context) => PPFCalculator()));
                 },
               ),
             ),
